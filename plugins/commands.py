@@ -440,7 +440,7 @@ async def settings(client, message):
     else:
         pass
 
-  if settings is not None:
+    if settings is not None:
      buttons = [
        [
         InlineKeyboardButton(
