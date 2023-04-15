@@ -527,8 +527,9 @@ async def settings(client, message):
 
 
 
-    @Client.on_message(filters.command('set_template'))
-     async def save_template(client, message):
+    
+@Client.on_message(filters.command('set_template'))
+async def save_template(client, message):
   sts = await message.reply("Checking template")
   userid = message.from_user.id if message.from_user else None
   if not userid:
