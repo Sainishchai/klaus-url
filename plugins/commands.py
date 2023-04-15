@@ -521,11 +521,13 @@ async def settings(client, message):
       reply_markup=reply_markup,
       disable_web_page_preview=True,
       parse_mode=enums.ParseMode.HTML,
-      reply_to_message_id=message.id)
+      reply_to_message_id=message.id
+    )
 
 
 
-@Client.on_message(filters.command('set_template'))
+
+    @Client.on_message(filters.command('set_template'))
 async def save_template(client, message):
   sts = await message.reply("Checking template")
   userid = message.from_user.id if message.from_user else None
