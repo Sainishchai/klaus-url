@@ -441,8 +441,8 @@ async def settings(client, message):
         pass
 
   if settings is not None:
-    buttons = [
-      [
+     buttons = [
+       [
         InlineKeyboardButton(
           'Filter Button',
           callback_data=f'setgs#button#{settings["button"]}#{grp_id}',
