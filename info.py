@@ -44,7 +44,7 @@ auth_users = [
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = environ.get('AUTH_CHANNEL', -1001843351268)
+AUTH_CHANNEL = environ.get('AUTH_CHANNEL', -1001687768591)
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
@@ -56,8 +56,8 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'b9936c4bb0e1902d055496919ce071291ec01626')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omegalinks.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'fdb5f1981cd3a8ed3ff568b5def3560c486a5b2d')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001876764500'))
